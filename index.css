@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(255, 252, 252) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.parent {
+  height: 400px;
+  width: 650px;
+  display: flex;
+  border-radius: 40px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.116);
+  background: rgb(255, 252, 252);
+  align-items: stretch;
+  border: 1px solid rgba(255, 166, 0, 0.288);
+  position: relative;
+}
+
+.leftSide {
+  border-radius: inherit;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background: rgb(128, 0, 128);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 55%;
+  padding: 10px;
+  gap: 30px;
+  font-weight: 900;
+  z-index: 2;
+  position: relative;
+}
+
+.leftSide button {
+  background: rgb(128, 0, 128);
+  color: white;
+  border: 1px solid white;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 50%;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  font-weight: 900;
+  position: relative;
+  z-index: 0;
+}
+.leftSide button:active {
+  transform: scale(0.98);
+}
+.leftSide button:hover {
+  background: rgb(128, 0, 128);
+}
+.leftSide span {
+    cursor: default;
+}
+h1 {
+  margin-bottom: 0;
+  cursor: default;
+}
+.leftSide span {
+  width: 90%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  height: 100%;
+  width: 50%;
+}
+.master {
+  width: 100%;
+}
+.master input {
+  width: 100%;
+  padding: 9px 6px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+  outline: none;
+  background: transparent;
+  font-family: cursive;
+  font-weight: 900;
+}
+.rem {
+  align-items: center;
+  justify-content: space-between;
+}
+.rem label,
+.rem a {
+  white-space: nowrap;
+}
+.rem a {
+  margin-left: 20px;
+}
+.master {
+  position: relative;
+}
+.master label {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  color: rgb(133, 132, 132);
+  transition: 0.25s ease all;
+  cursor: text;
+}
+.cont {
+  display: flex;
+  gap: 12px;
+}
+form button {
+  background: rgb(128, 0, 128);
+  color: white;
+  border: 1px solid white;
+  padding: 12px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 50%;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  font-weight: 900;
+}
+form button:active {
+  transform: scale(0.98);
+}
+.test {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form h1 {
+  color: rgb(128, 0, 128);
+  cursor: default;
+}
+input[type="checkbox"] {
+  accent-color: rgb(128, 0, 128);
+  cursor: pointer;
+}
+a {
+  color: rgb(128, 0, 128);
+}
+.master input:focus + label, 
+.master input:not(:placeholder-shown) + label {
+  transform: translateY(-15px);
+  color: rgb(128, 0, 128);
+  opacity: 0;
+}
+.message{
+    z-index: 20;
+    position: relative;
+}
